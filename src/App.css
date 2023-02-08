@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+NKo&display=swap');
+
+
+
+
 *{
    margin: 0;
    padding: 0;
-   font-family: sans-serif;
+   font-family: 'Noto Sans NKo', sans-serif;
    box-sizing: border-box;
 }
 
 :root{
-   --primary-color: #ff0000;
+   --primary-color: #dd0303;
    --secondary-color:#282421;
 }
 
@@ -17,8 +22,8 @@
 
 .header{
    width: 100%;
-   height: 100vh;
-   background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/images/header-image.png);
+   height: 95vh;
+   background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/images/header-image.jpg);
    background-size: cover;
    background-position: center;
 }
@@ -31,8 +36,10 @@
 }
 
 .logo{
-   width: 175px;
-   height: 45px;
+  
+   width: 150px;
+   height: 40px;
+   margin-left: 150px;
    background: url(/images/logo.png);
    background-size: cover;
    background-position: center;
@@ -42,14 +49,15 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-right: 15px;
+   margin-right: 150px;
 }
 
 .language-toggle{
+   background-color: rgba(250, 244, 244, 0.063);
    font-size: 15px;
    font-weight: 10;  
    border: solid white 1px;
-   padding:10px 10px;
+   padding:7px 10px;
    border-radius: 4px;
    margin-right: 25px;
 
@@ -59,8 +67,9 @@
 }
 
 .sign-in-box{
+   font-size: 15px;
    background-color: var(--primary-color) ;
-   padding: 10px 20px;
+   padding: 7px 20px;
    border-radius: 4px   ;
 }
 
@@ -75,40 +84,44 @@
 }
 
 .main-title-head{
-   width: 610px;
-font-size: 60px;
-font-weight: 700;
-text-shadow:10px 10px 40px rgba(255, 255, 255, 0.4);
+   width:100%;
+font-size: 50px;
+font-weight: bolder;
+text-shadow:10px 10px 40px rgba(255, 255, 255, 0.103);
 }
 
 .sub-head{
    padding: 20px;
+   padding-top: 15px;
    font-size: 25px;
    font-weight: lighter;
 }
 
 .email-text{
-   font-size: 17.5px;
+   font-size: 20px;
    padding: 20px;
 }
 
 .email-box{
-width: 700px;
-height: 70px;
+width: 600px;
+height: 55px;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-background-color: #fff;
+
 }
 
 #email-scan{
+   margin-right: 10px;
    display: flex;
 align-items: center;
 width: 100%;
 padding-left: 10px;
 font-size: 15px;
-
-
+background-color: rgba(250, 244, 244, 0.063);
+border: rgba(250, 244, 244, 0.445) solid 1px;
+border-radius: 5px;
+color:  rgba(250, 244, 244, 0.711);
 }
 
 .get-started{
@@ -117,10 +130,11 @@ font-size: 15px;
    justify-content: center;
    align-items: center; 
    width: 300px;
-   font-size: 25px;
+   font-size: 22.5px;
    font-weight: 100;
    color: white;
    border: none;
+   border-radius: 5px;
 }
 
 .get-started i{
